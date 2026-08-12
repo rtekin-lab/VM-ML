@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------
 # Bölüm 13
 # Konum : BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK › 13.2. Apache Kafka: Dağıtık Mesajlaşma ve Veri Akışı Platformu › 13.2.3. Python ile Uygulama: Kafka Üretici ve Tüketici Ağı
+# Kitap  : Kod 13.1 (Kafka tüketicisi ile gerçek zamanlı anomali ) · Kod 13.2 (Kafka Admin API ile konu oluşturma ve yapıla)
 # Dosya : bolum13/13_02_03_python-ile-uygulama-kafka-uretici-ve-tuketici-ag.py
 # Gerekli: pip install kafka-python
 # ==========================================================================

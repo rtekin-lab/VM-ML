@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------
 # Bölüm 13
 # Konum : BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK › 13.4. Akan Veri Üzerinde Makine Öğrenmesi Uygulamaları (Stream ML) › 13.4.1. Akan Veride Sınıflandırma ve Kümeleme: Teorik Temeller ve Algoritmalar
+# Kitap  : Kod 13.5 (CluStream mikro-küme yapısının uygulanması) · Kod 13.6 (River ile çevrim içi öğrenme: test-sonra-eği)
 # Dosya : bolum13/13_04_01_akan-veride-siniflandirma-ve-kumeleme-teorik-tem.py
 # Gerekli: pip install apache-flink
 # ==========================================================================

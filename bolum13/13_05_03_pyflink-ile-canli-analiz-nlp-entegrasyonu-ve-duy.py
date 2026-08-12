@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------
 # Bölüm 13
 # Konum : BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK › 13.5. Uçtan Uca Vaka Çalışması (Case Study): › 13.5.3. PyFlink ile Canlı Analiz: NLP Entegrasyonu ve Duygu Analizi Pipeline'ı
+# Kitap  : Kod 13.8 (VADER ve DistilBERT ile hibrit duygu analizi) · Kod 13.9 (Uçtan uca gecikme ve verim ölçümü)
 # Dosya : bolum13/13_05_03_pyflink-ile-canli-analiz-nlp-entegrasyonu-ve-duy.py
 # Gerekli: pip install apache-flink kafka-python nltk transformers
 # ==========================================================================

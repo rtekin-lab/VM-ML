@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------
 # Bölüm 13
 # Konum : BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK › 13.3. Apache Flink ile Gerçek Zamanlı Veri İşleme Motoru › 13.3.4. Alternatif Motor: Spark Structured Streaming ile Akış İşleme › Çıktı Modları (Output Modes)
+# Kitap  : Kod 13.4 (Spark Structured Streaming çıktı modları)
 # Dosya : bolum13/13_03_04_cikti-modlari.py
 # Gerekli: pip install pyspark
 # ==========================================================================

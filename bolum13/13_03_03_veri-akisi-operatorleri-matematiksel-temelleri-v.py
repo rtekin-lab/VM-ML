@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------
 # Bölüm 13
 # Konum : BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK › 13.3. Apache Flink ile Gerçek Zamanlı Veri İşleme Motoru › 13.3.3. Veri Akışı Operatörleri: Matematiksel Temelleri ve Python Uygulamaları
+# Kitap  : Kod 13.3 (PyFlink ile kayan pencerede hareketli ortala)
 # Dosya : bolum13/13_03_03_veri-akisi-operatorleri-matematiksel-temelleri-v.py
 # Gerekli: pip install apache-flink
 # ==========================================================================

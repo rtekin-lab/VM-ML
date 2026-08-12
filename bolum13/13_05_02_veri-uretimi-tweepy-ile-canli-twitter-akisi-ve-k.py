@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------
 # Bölüm 13
 # Konum : BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK › 13.5. Uçtan Uca Vaka Çalışması (Case Study): › 13.5.2. Veri Üretimi: Tweepy ile Canlı Twitter Akışı ve Kafka'ya İletim
+# Kitap  : Kod 13.7 (Kafka üreticisiyle tweet akışı benzetimi)
 # Dosya : bolum13/13_05_02_veri-uretimi-tweepy-ile-canli-twitter-akisi-ve-k.py
 # Gerekli: pip install kafka-python tweepy
 # ==========================================================================

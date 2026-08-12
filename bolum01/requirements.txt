@@ -1,0 +1,13 @@
+# Bölüm 1 — BÖLÜM 1: Python Ortamının Hazırlanması ve Temel Python Konuları
+ipywidgets
+matplotlib
+numpy
+pandas
+papermill
+plotly
+requests
+scikit-learn
+scipy
+seaborn
+statsmodels
+torch

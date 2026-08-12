@@ -1,0 +1,17 @@
+# ==========================================================================
+# VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+# Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+# --------------------------------------------------------------------------
+# Bölüm 1
+# Konum : BÖLÜM 1: Python Ortamının Hazırlanması ve Temel Python Konuları › 1.4. Sanallaştırılmış Ortamlar (Virtual Environments) › 1.4.4. conda ile Ortam Yönetimi › A. conda Ortamı Oluşturma ve Yönetme
+# Kitap  : Kod 1.90 (ORTAM ETKİNLEŞTİRME / DEVREDıŞı BIRAKMA) · Kod 1.91 (PAKET YÖNETİMİ) · Kod 1.92 (pip fallback (conda'da olmayan paketler için)
+# Dosya : bolum01/01_04_04_a-conda-ortami-olusturma-ve-yonetme.py
+# ==========================================================================
+# --- ▌ Kod Örneği 1.4.3 — conda: Kapsamlı Ortam Yönetimi ---
+# ─── ORTAM OLUŞTURMA ─────────────────────────────────────────────────────────
+
+# --- ▌ Kod Örneği 1.4.3 — conda: Kapsamlı Ortam Yönetimi ---
+# Birden fazla paket tek komutla (McKinney'in tam kurulum komutu):
+conda install lxml beautifulsoup4 html5lib openpyxl \
+    requests sqlalchemy seaborn scipy statsmodels \
+    patsy scikit-learn pyarrow pytables numba

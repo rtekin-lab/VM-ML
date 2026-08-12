@@ -1,0 +1,9 @@
+# Bölüm 4 — BÖLÜM 4: Veri Görselleştirme Araçları
+dash
+matplotlib
+numpy
+pandas
+plotly
+scikit-learn
+scipy
+seaborn

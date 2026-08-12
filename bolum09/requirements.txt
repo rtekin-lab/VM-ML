@@ -1,0 +1,11 @@
+# Bölüm 9 — BÖLÜM 9: Metin Madenciliği ve Doğal Dil İşleme (NLP)
+beautifulsoup4
+gensim
+matplotlib
+nltk
+numpy
+pandas
+scikit-learn
+spacy
+torch
+transformers

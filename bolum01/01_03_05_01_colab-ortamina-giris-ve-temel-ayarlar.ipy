@@ -1,0 +1,45 @@
+# ==========================================================================
+# VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+# Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+# --------------------------------------------------------------------------
+# Bölüm 1
+# Konum : BÖLÜM 1: Python Ortamının Hazırlanması ve Temel Python Konuları › 1.3. Alternatif Geliştirme Ortamları › 1.3.5. Google Colaboratory (Colab) › 1.3.5.1. Colab Ortamina Giris ve Temel Ayarlar
+# Kitap  : Kod 1.78 (Google Colab başlangıç — Drive bağlama ve si)
+# Dosya : bolum01/01_03_05_01_colab-ortamina-giris-ve-temel-ayarlar.py
+# Gerekli: pip install torch
+# ==========================================================================
+# ─── Colab Baslangic Sablonu ─────────────────────────────────────
+
+# 1. Google Drive bagla
+from google.colab import drive
+drive.mount("/content/drive")
+# /content/drive/MyDrive/ artik erisimde
+
+# 2. Calisma dizinine git
+import os
+os.chdir("/content/drive/MyDrive/projeler/veri-analizi")
+
+# 3. Sistem bilgisini kontrol et
+import subprocess
+print("CPU:", subprocess.run(["cat", "/proc/cpuinfo"],
+      capture_output=True, text=True).stdout.split("model name")[1].split("\n")[0])
+
+!free -h
+!df -h /content
+
+# 4. GPU bilgisi
+!nvidia-smi
+import torch
+print(f"CUDA: {torch.cuda.is_available()}")
+print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'Yok'}")
+
+# 5. TPU kontrolü
+try:
+    import torch_xla.core.xla_model as xm
+    device = xm.xla_device()
+    print(f"TPU: {device}")
+except ImportError:
+    print("TPU: Mevcut degil")
+
+# 6. Donanim hizlandirici degistir
+# Runtime > Change runtime type > GPU/TPU/None

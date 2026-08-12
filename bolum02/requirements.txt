@@ -1,0 +1,12 @@
+# Bölüm 2 — BÖLÜM 2: VERİ MADENCİLİĞİNE GİRİŞ VE MATEMATİKSEL TEMELLER
+beautifulsoup4
+dask
+geopandas
+matplotlib
+mlxtend
+numpy
+pandas
+requests
+scikit-learn
+scipy
+statsmodels

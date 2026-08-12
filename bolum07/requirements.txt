@@ -1,0 +1,8 @@
+# Bölüm 7 — BÖLÜM 7: GÖZETİMSİZ ÖĞRENME: KÜMELEME VE BOYUT İNDİRGEME
+hdbscan
+matplotlib
+numpy
+pandas
+scikit-learn
+scipy
+umap-learn

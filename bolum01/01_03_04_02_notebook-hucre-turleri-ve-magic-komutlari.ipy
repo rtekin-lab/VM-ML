@@ -1,0 +1,59 @@
+# ==========================================================================
+# VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+# Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+# --------------------------------------------------------------------------
+# Bölüm 1
+# Konum : BÖLÜM 1: Python Ortamının Hazırlanması ve Temel Python Konuları › 1.3. Alternatif Geliştirme Ortamları › 1.3.4. JupyterLab ve Jupyter Notebook › 1.3.4.2. Notebook Hucre Turleri ve Magic Komutlari
+# Kitap  : Kod 1.75 (IPython magic komutları — zamanlama, dosya İ)
+# Dosya : bolum01/01_03_04_02_notebook-hucre-turleri-ve-magic-komutlari.py
+# Gerekli: pip install numpy pandas
+# ==========================================================================
+
+# --- kitapta önceki blokta yer alan import'lar (dosya tek başına çalışsın diye eklendi)
+import random
+# ─── 1. Satir Magics (%) ─────────────────────────────────────────
+
+# Zamanlama
+%time sum(range(1_000_000))
+%timeit -n 100 sum(range(1_000_000))   # 100 tekrar ortalamasi
+
+# Degisken ve fonksiyon listesi
+%who          # Tum degiskenleri listele
+%whos         # Detayli bilgi (tip, deger)
+%reset -f     # Tum degiskenleri temizle
+
+# Kaynak kod gosterimi
+import pandas as pd
+%pdef pd.DataFrame          # Imzayi goster
+%pdoc pd.DataFrame          # Belgelendirmeyi goster
+%psource pd.DataFrame.head  # Kaynak kodu goster
+
+# Dosya islemleri
+%ls            # Dizin listesi
+%cd veri/      # Dizin degistir
+%pwd           # Mevcut dizin
+%cat dosya.py  # Dosya icerigini goster
+
+# ─── 2. Hucre Magics (%%) ────────────────────────────────────────
+
+%%timeit
+# Tum hucreyi zamanlama
+import numpy as np
+A = np.random.randn(500, 500)
+np.linalg.inv(A)
+
+%%bash
+# Shell komutu calistir
+echo "Sistem: $(uname -a)"
+pip list | grep -E "numpy|pandas|sklearn"
+
+%%writefile hesaplama.py
+# Hucre icerigini dosyaya yaz
+def faktoriyel(n):
+    return 1 if n <= 1 else n * faktoriyel(n-1)
+
+print(faktoriyel(10))
+
+%%html
+<h2 style="color:#2E75B6">Zengin HTML Cikti</h2>
+<p>Notebook icerisinde dogrudan HTML render edilir.</p>

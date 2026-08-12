@@ -1,0 +1,9 @@
+# Bölüm 3 — BÖLÜM 3: Veri Ön İşleme ve Temizleme Teknikleri
+matplotlib
+missingno
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
+torch

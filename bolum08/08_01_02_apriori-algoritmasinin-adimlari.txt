@@ -1,0 +1,21 @@
+-- ==========================================================================
+-- VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+-- Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+-- --------------------------------------------------------------------------
+-- Bölüm 8
+-- Konum : BÖLÜM 8: BİRLİKTELİK KURALLARI VE TAVSİYE SİSTEMLERİ › 8.1. Birliktelik Kuralları (Association Rules) › 8.1.2. Algoritmalar: Apriori ve FP-Growth › Apriori Algoritması: Aday Üretimi Yaklaşımı › Apriori Algoritmasının Adımları (Detaylı)
+-- Dosya : bolum08/08_01_02_apriori-algoritmasinin-adimlari.txt
+-- ==========================================================================
+# --- Algoritma: Apriori Pseudocode ---
+L₁ = {sık tekli öğe kümeleri}
+k = 2
+
+# --- Algoritma: Apriori Pseudocode ---
+    for each transaction T in D:
+        Cₜ = subset(Cₖ, T)    # T içindeki aday kümeleri bul
+        for each candidate c in Cₜ:
+            c.count++          # Destek sayacını artır
+
+# --- Algoritma: Apriori Pseudocode ---
+    Lₖ = {c ∈ Cₖ : c.count / |D| ≥ min_sup}
+    k = k + 1

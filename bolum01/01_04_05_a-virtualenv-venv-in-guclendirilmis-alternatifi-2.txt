@@ -1,0 +1,21 @@
+# ==========================================================================
+# VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+# Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+# --------------------------------------------------------------------------
+# Bölüm 1
+# Konum : BÖLÜM 1: Python Ortamının Hazırlanması ve Temel Python Konuları › 1.4. Sanallaştırılmış Ortamlar (Virtual Environments) › 1.4.5. virtualenv ve pipenv — Gelişmiş pip Araçları › A. virtualenv — venv'in Güçlendirilmiş Alternatifi
+# Kitap  : Kod 1.102 (Virtualenv — venv'in Güçlendirilmiş Alternat) · Kod 1.103 (Virtualenv — venv'in Güçlendirilmiş Alternat)
+# Dosya : bolum01/01_04_05_a-virtualenv-venv-in-guclendirilmis-alternatifi-2.py
+# ==========================================================================
+# --- ▌ Kod Örneği 1.4.5 — virtualenv Kurulum ve Kullanım ---
+# ~/.bashrc veya ~/.zshrc'e eklenecek satırlar:
+# export WORKON_HOME=$HOME/.virtualenvs
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# source /usr/local/bin/virtualenvwrapper.sh
+
+# --- ▌ Kod Örneği 1.4.5 — virtualenv Kurulum ve Kullanım ---
+mkvirtualenv veri-bilimi             # Ortam oluştur
+workon veri-bilimi                   # Ortama geç
+lsvirtualenv                         # Tüm ortamları listele
+deactivate                           # Devre dışı bırak
+rmvirtualenv veri-bilimi             # Ortamı sil

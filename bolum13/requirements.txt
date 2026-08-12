@@ -1,0 +1,8 @@
+# Bölüm 13 — BÖLÜM 13: VERİ AKIŞI İŞLEME VE GERÇEK ZAMANLI ANALİTİK
+apache-flink
+kafka-python
+nltk
+pyspark
+river
+transformers
+tweepy

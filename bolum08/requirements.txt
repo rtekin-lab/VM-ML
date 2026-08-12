@@ -1,0 +1,9 @@
+# Bölüm 8 — BÖLÜM 8: BİRLİKTELİK KURALLARI VE TAVSİYE SİSTEMLERİ
+matplotlib
+mlxtend
+numpy
+pandas
+scikit-learn
+scikit-surprise
+scipy
+seaborn

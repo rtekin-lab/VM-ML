@@ -1,0 +1,44 @@
+# Kitaptaki tüm kod örnekleri için birleşik paket listesi
+# Bölüme özel kurulum için: bolumNN/requirements.txt
+Pillow
+apache-flink
+beautifulsoup4
+catboost
+dash
+dask
+fastapi
+gensim
+geopandas
+hdbscan
+ipywidgets
+kafka-python
+lightgbm
+matplotlib
+missingno
+mlxtend
+nltk
+numpy
+pandas
+papermill
+plotly
+pydantic
+pyspark
+requests
+river
+scikit-learn
+scikit-surprise
+scipy
+seaborn
+shap
+spacy
+statsmodels
+tensorflow
+torch
+transformers
+tweepy
+umap-learn
+uvicorn
+xgboost
+
+# Şekil üretimi için (sekilleri_uret.py)
+kaleido

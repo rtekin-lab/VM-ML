@@ -1,0 +1,29 @@
+# ==========================================================================
+# VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+# Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+# --------------------------------------------------------------------------
+# Bölüm 6
+# Konum : BÖLÜM 6: Sınıflandırma: Karar Ağaçlarından Topluluk Öğrenmesine › 6.2. Karar Ağaçları ve Topluluk (Ensemble) Devrimi › 6.2.1. Karar Ağaçları (Decision Trees) › Ağaç Büyütme: Özyinelemeli Bölünme Algoritması
+# Kitap  : Kod 6.4 (Karar ağacı büyütme algoritmasının sözde kod)
+# Dosya : bolum06/06_02_01_agac-buyutme-ozyinelemeli-bolunme-algoritmasi.py
+# ==========================================================================
+# --- Algoritma: Özyinelemeli Karar Ağacı Büyütme ---
+def build_tree(D, depth=0):
+    # Durma koşulları kontrol edilir
+    if depth == max_depth: return leaf(majority_class(D))
+    if len(D) < min_samples_split: return leaf(majority_class(D))
+    if impurity(D) == 0: return leaf(D[0].class)   # Tamamen saf düğüm
+
+# --- Algoritma: Özyinelemeli Karar Ağacı Büyütme ---
+    # En iyi bölünme aranır
+    best_feat, best_thresh = find_best_split(D)   # max IG veya min Gini
+
+# --- Algoritma: Özyinelemeli Karar Ağacı Büyütme ---
+    # Veri bölünür ve alt ağaçlar oluşturulur
+    D_left  = D[D[best_feat] <= best_thresh]
+    D_right = D[D[best_feat] >  best_thresh]
+
+# --- Algoritma: Özyinelemeli Karar Ağacı Büyütme ---
+    node.left  = build_tree(D_left,  depth + 1)
+    node.right = build_tree(D_right, depth + 1)
+    return node

@@ -1,0 +1,5 @@
+# Bölüm 11 — BÖLÜM 11: DERİN ÖĞRENME (DEEP LEARNING) MİMARİLERİ VE OPTİMİZASYON
+matplotlib
+numpy
+scikit-learn
+tensorflow

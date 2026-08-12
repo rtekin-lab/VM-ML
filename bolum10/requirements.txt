@@ -1,0 +1,7 @@
+# Bölüm 10 — BÖLÜM 10: YAPAY SİNİR AĞLARINA GİRİŞ (ARTIFICIAL NEURAL NETWORKS)
+matplotlib
+numpy
+pandas
+scikit-learn
+seaborn
+tensorflow

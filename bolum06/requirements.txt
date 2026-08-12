@@ -1,0 +1,9 @@
+# Bölüm 6 — BÖLÜM 6: Sınıflandırma: Karar Ağaçlarından Topluluk Öğrenmesine
+catboost
+lightgbm
+matplotlib
+numpy
+pandas
+scikit-learn
+shap
+xgboost

@@ -1,0 +1,43 @@
+# ==========================================================================
+# VERİ MADENCİLİĞİ VE MAKİNE ÖĞRENMESİ
+# Python ile Temel Analitikten Büyük Veri ve Gerçek Zamanlı Sistemlere
+# --------------------------------------------------------------------------
+# Bölüm 1
+# Konum : BÖLÜM 1: Python Ortamının Hazırlanması ve Temel Python Konuları › 1.3. Alternatif Geliştirme Ortamları › 1.3.6. Kaggle Notebooks (Kernels) › 1.3.6.1. Kaggle Notebooks Ozellikleri
+# Kitap  : Kod 1.81 (Kaggle API ile veri indirme ve Kaggle Notebo)
+# Dosya : bolum01/01_03_06_01_kaggle-notebooks-ozellikleri.py
+# Gerekli: pip install pandas
+# ==========================================================================
+# Kaggle API ile yerel makineden erisim
+pip install kaggle
+
+# API anahtarini ayarla
+# kaggle.com > Account > Create New API Token > kaggle.json indir
+mkdir -p ~/.kaggle
+cp ~/Downloads/kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+
+# Yarismalar listele
+kaggle competitions list
+
+# Yarismadan veri indir
+kaggle competitions download -c house-prices-advanced-regression-techniques
+
+# Veri seti indir
+kaggle datasets download -d datasets/iris
+
+# Kernel (notebook) yukle
+kaggle kernels push
+
+# Kernel ciktisini indir
+kaggle kernels output kullanici/kernel-adi
+
+# ─── Kaggle Notebook Icinde Veri Yukleme ─────────────────────────
+import pandas as pd
+import os
+
+# Yarısma verileri otomatik /kaggle/input altinda
+print(os.listdir("/kaggle/input"))
+df_train = pd.read_csv("/kaggle/input/house-prices-advanced-regression-techniques/train.csv")
+df_test  = pd.read_csv("/kaggle/input/house-prices-advanced-regression-techniques/test.csv")
+print(f"Egitim: {df_train.shape}, Test: {df_test.shape}")

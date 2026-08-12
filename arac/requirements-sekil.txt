@@ -1,0 +1,26 @@
+# Şekil üretimi için gereken TAM kütüphane listesi.
+# kod/requirements.txt'ye ek olarak kurulmalıdır.
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+statsmodels
+plotly
+kaleido
+tensorflow
+xgboost
+lightgbm
+catboost
+mlxtend
+nltk
+gensim
+wordcloud
+umap-learn
+hdbscan
+yellowbrick
+missingno
+scikit-surprise
+vaderSentiment
+textblob

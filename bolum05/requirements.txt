@@ -1,0 +1,7 @@
+# Bölüm 5 — BÖLÜM 5: MAKİNE ÖĞRENMESİNE GİRİŞ VE REGRESYON ANALİZİ
+matplotlib
+numpy
+pandas
+scikit-learn
+scipy
+statsmodels

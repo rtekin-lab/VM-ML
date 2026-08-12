@@ -1,0 +1,12 @@
+# Bölüm 12 — BÖLÜM 12: BÜYÜK VERİ ANALİTİĞİ VE DAĞITIK MAKİNE ÖĞRENMESİ
+Pillow
+fastapi
+matplotlib
+numpy
+pandas
+pydantic
+pyspark
+requests
+scipy
+tensorflow
+uvicorn
